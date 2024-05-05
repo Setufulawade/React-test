@@ -15,6 +15,7 @@ export default function Textform1(props) {
   }
 
   return (
+    <>
     <div>
       <h1>{props.heading} </h1>
       <div className="mb-3">
@@ -22,5 +23,10 @@ export default function Textform1(props) {
       </div>
       <button className="btn btn-primary" onClick={handleUpclick} >Convert to UpperCase</button>
     </div>
+    <div className='container my-3'>
+      <h1>your text summary</h1>
+      <p>{text.split(" ").length} words and {text.length} characters</p>
+    </div>
+    </>
   )
 }
